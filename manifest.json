@@ -1,0 +1,68 @@
+{
+	"extension": 
+	{
+		"name": "JSLint",
+		"version": "1.0.1",
+		"description": "Wakanda Studio JS Lint Plugin",
+		"icon": "JSLint.png",
+		
+		"senders": [
+					{ 
+						"location": "codeEditorToolbar", 
+						"tips": "Check Javascript Error",
+						"icon": "JSLint.png",
+						"menu":
+						[
+							{
+								"actionName": "checkError"
+							},
+							{
+								"actionName": "cleanErrors"
+							},
+							{
+								"separator": {}
+							},
+							{
+								"actionName": "doSettings"
+							},
+							{
+								"actionName": "doAbout"
+							}
+						]
+					}
+		],
+		
+		"actions": [
+					{
+						"name": "checkError",
+						"title": "Check Errors",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						]
+					},
+					{
+						"name": "cleanErrors",
+						"title": "Clean Errors",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						]
+					},
+					{
+						"name": "doSettings",
+						"title": "Settings...",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						]
+					},
+					{
+						"name": "doAbout",
+						"title": "About...",
+						"targets":	[
+							{ "uti": "com.netscape.javascript-source" }
+						]
+					}
+		],
+		
+		"lifetime": "application_lifetime"
+	}
+}
