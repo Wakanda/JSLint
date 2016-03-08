@@ -38,7 +38,8 @@
 						"title": "Check Errors",
 						"targets":	[
 							{ "uti": "com.netscape.javascript-source" }
-						]
+						],
+						"trigger": [{"event": "onSave"}]
 					},
 					{
 						"name": "cleanErrors",
